@@ -9,11 +9,20 @@ import SwiftUI
 import CoreImage.CIFilterBuiltins
 
 struct BarcodeVM {
-    static func makeBarcode(price: Int) -> (UIImage, String)? {
+    static func makeBarcode(type: Options, price: Int) -> (UIImage, String)? {
         let context = CIContext()
         let filter = CIFilter.code128BarcodeGenerator()
         
-        let str = makeBarcodeString(price: price)
+        var str = ""
+        
+        switch type {
+        case .none:
+            break
+        case .homeplus:
+            str = makeHomeplusBarcodeString(price: price)
+        case .iparkamall:
+            str = makeIparkMallBarcodeString(price: price)
+        }
         
         let data = Data(str.utf8)
         
@@ -29,12 +38,22 @@ struct BarcodeVM {
         return nil
     }
     
-    static private func makeBarcodeString(price: Int) -> String {
+    static private func makeHomeplusBarcodeString(price: Int) -> String {
         var str = ""
         
-        str += "yyyyMMddhhmmss".toTime()
+        str += "yyyyMMddHHmmss".toTime()
         str += String(format: "%08d", price)
         str += "34"
+        
+        return str
+    }
+    
+    static private func makeIparkMallBarcodeString(price: Int) -> String {
+        var str = ""
+        
+        str += "026100932"
+        str += "yyyyMMddhhmmss".toTime()
+        str += "03413"
         
         return str
     }

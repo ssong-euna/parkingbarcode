@@ -7,21 +7,16 @@
 
 import SwiftUI
 
+enum Options: String, CaseIterable {
+    case none = "지점을 선택해주세요"
+    case homeplus = "홈플러스"
+    case iparkamall = "아이파크몰"
+}
+
 struct ContentView: View {
-    let arrRules: [[String: Int]] = [
-        ["2시간": 10000],
-        ["3시간": 30000],
-        ["4시간": 50000],
-        ["5시간": 100000]
-    ]
-    @State private var maxWidth: CGFloat = 0
-    @State private var isSelected: Bool = false
-    @State private var barcodeImg = UIImage()
-    @State private var barcodeStr: String = ""
-    
-    var keys: [String] {
-        return arrRules.compactMap { $0.keys.first }
-    }
+    @State private var selectedOption: Options = .none
+    @State private var isExpanded = false
+    @State private var isSelected = false
     
     var body: some View {
         NavigationStack {
@@ -31,38 +26,74 @@ struct ContentView: View {
                 .padding()
                 .font(.largeTitle)
             Spacer()
-            Spacer()
             
-            HStack(spacing: 20) {
-                ForEach(Array(arrRules.enumerated()), id: \.offset) { index, rule in
-                    if let title = rule.keys.first,
-                       let time = rule.values.first {
-                        BtnSelectTime(title: title, width: maxWidth, idx: index, action: { index in
-                            if let (image, str) = BarcodeVM.makeBarcode(price: time) {
-                                barcodeImg = image
-                                barcodeStr = str
-                                isSelected = true
+            HStack {
+                VStack(alignment: .leading, spacing: 5) {
+                    Button(action: {
+                        isExpanded.toggle()
+                    }) {
+                        HStack {
+                            Text(selectedOption.rawValue)
+                            Spacer()
+                            Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        }
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 8).stroke())
+                    }
+                    
+                    if isExpanded {
+                        ForEach(Options.allCases.filter { $0 != .none }, id: \.self) { option in
+                            Button(action: {
+                                selectedOption = option
+                                isExpanded = false
+                            }) {
+                                Text(option.rawValue)
+                                    .padding(.horizontal)
+                                    .padding(.vertical, 8)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                             }
-                        })
+                        }
+                        .foregroundStyle(Color.init(hex: "#222222"))
+                        .background(RoundedRectangle(cornerRadius: 8).stroke())
                     }
                 }
+                .foregroundStyle(Color.init(hex: "#222222"))
+                .animation(.default, value: isExpanded)
+                .padding()
+                
+                Button(action: {
+                    isSelected.toggle()
+                }, label: {
+                    Text("확인")
+                        .font(Font.system(size: 20, weight: .bold))
+                })
+                .padding()
+                .foregroundStyle(Color.init(hex: "#ffffff"))
+                .background(Color.init(hex: "#df0011"))
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                
+                Spacer()
             }
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.horizontal, 10)
-            .background(
-                HiddenMeasurer(titles: keys) { max in
-                    self.maxWidth = max
-                }
-            )
             
             Spacer()
             
             NavigationLink(
-                destination: BarcodeView(image: $barcodeImg, str: $barcodeStr),
+                destination: destinationView,
                 isActive: $isSelected
             ) {
                 EmptyView()
             }
+        }
+    }
+    
+    var destinationView: AnyView {
+        switch selectedOption {
+        case .none:
+            return AnyView(EmptyView())
+        case .homeplus:
+            return AnyView(HomeplusView())
+        case .iparkamall:
+            return AnyView(IparkMallView())
         }
     }
 }
