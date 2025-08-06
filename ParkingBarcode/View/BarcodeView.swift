@@ -15,7 +15,17 @@ struct BarcodeView: View {
         Image(uiImage: image)
             .interpolation(.none)
             .resizable()
-            .frame(width: 300, height: 300)
+            .frame(width: 200, height: 300)
+        
+        Spacer()
+        
         Text(str)
+        
+        Spacer()
+        
+        Image(uiImage: image)
+            .interpolation(.none)
+            .resizable()
+            .frame(height: 300)
     }
 }
