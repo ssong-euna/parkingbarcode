@@ -11,6 +11,7 @@ enum Options: String, CaseIterable {
     case none = "지점을 선택해주세요"
     case homeplus = "홈플러스"
     case iparkamall = "아이파크몰"
+    case traders = "트레이더스"
 }
 
 struct ContentView: View {
@@ -94,10 +95,8 @@ struct ContentView: View {
             return AnyView(HomeplusView())
         case .iparkamall:
             return AnyView(IparkMallView())
+        case .traders:
+            return AnyView(TradersView())
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

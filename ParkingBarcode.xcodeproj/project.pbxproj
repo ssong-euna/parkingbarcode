@@ -3,37 +3,84 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
-/* Begin PBXFileReference section */
-		CF0041CE2E39B15600AD169A /* ParkingBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		4311FEB394CB62BDA8C4E705 /* Pods_ParkingBarcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAE1BAF6441ABC012AC1E46 /* Pods_ParkingBarcode.framework */; };
+		CF6B879F2E4C73EB00AD0E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B878B2E4C73EB00AD0E2B /* Assets.xcassets */; };
+		CF6B87A02E4C73EB00AD0E2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B878E2E4C73EB00AD0E2B /* Preview Assets.xcassets */; };
+		CF6B87A12E4C73EB00AD0E2B /* IparkMallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87992E4C73EB00AD0E2B /* IparkMallView.swift */; };
+		CF6B87A22E4C73EB00AD0E2B /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87902E4C73EB00AD0E2B /* ColorExtention.swift */; };
+		CF6B87A32E4C73EB00AD0E2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87962E4C73EB00AD0E2B /* ContentView.swift */; };
+		CF6B87A42E4C73EB00AD0E2B /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87912E4C73EB00AD0E2B /* StringExtention.swift */; };
+		CF6B87A52E4C73EB00AD0E2B /* ParkingBarcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B878D2E4C73EB00AD0E2B /* ParkingBarcodeApp.swift */; };
+		CF6B87A62E4C73EB00AD0E2B /* BtnSelectTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87952E4C73EB00AD0E2B /* BtnSelectTime.swift */; };
+		CF6B87A72E4C73EB00AD0E2B /* BarcodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B879D2E4C73EB00AD0E2B /* BarcodeVM.swift */; };
+		CF6B87A82E4C73EB00AD0E2B /* TradersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B879B2E4C73EB00AD0E2B /* TradersView.swift */; };
+		CF6B87A92E4C73EB00AD0E2B /* HomeplusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87982E4C73EB00AD0E2B /* HomeplusView.swift */; };
+		CF6B87AA2E4C73EB00AD0E2B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B879A2E4C73EB00AD0E2B /* MainView.swift */; };
+		CF6B87AB2E4C73EB00AD0E2B /* HiddenMeasurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87972E4C73EB00AD0E2B /* HiddenMeasurer.swift */; };
+		CF6B87AC2E4C73EB00AD0E2B /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B87942E4C73EB00AD0E2B /* BarcodeView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CF0041D02E39B15600AD169A /* ParkingBarcode */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ParkingBarcode;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		7AAE1BAF6441ABC012AC1E46 /* Pods_ParkingBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkingBarcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C8A7177D85864A0426895C /* Pods-ParkingBarcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingBarcode.debug.xcconfig"; path = "Target Support Files/Pods-ParkingBarcode/Pods-ParkingBarcode.debug.xcconfig"; sourceTree = "<group>"; };
+		CC33271E01E1BAA26AEE5762 /* Pods-ParkingBarcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingBarcode.release.xcconfig"; path = "Target Support Files/Pods-ParkingBarcode/Pods-ParkingBarcode.release.xcconfig"; sourceTree = "<group>"; };
+		CF0041CE2E39B15600AD169A /* ParkingBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6B878B2E4C73EB00AD0E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF6B878D2E4C73EB00AD0E2B /* ParkingBarcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingBarcodeApp.swift; sourceTree = "<group>"; };
+		CF6B878E2E4C73EB00AD0E2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF6B87902E4C73EB00AD0E2B /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		CF6B87912E4C73EB00AD0E2B /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		CF6B87942E4C73EB00AD0E2B /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
+		CF6B87952E4C73EB00AD0E2B /* BtnSelectTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnSelectTime.swift; sourceTree = "<group>"; };
+		CF6B87962E4C73EB00AD0E2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF6B87972E4C73EB00AD0E2B /* HiddenMeasurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenMeasurer.swift; sourceTree = "<group>"; };
+		CF6B87982E4C73EB00AD0E2B /* HomeplusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeplusView.swift; sourceTree = "<group>"; };
+		CF6B87992E4C73EB00AD0E2B /* IparkMallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IparkMallView.swift; sourceTree = "<group>"; };
+		CF6B879A2E4C73EB00AD0E2B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CF6B879B2E4C73EB00AD0E2B /* TradersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradersView.swift; sourceTree = "<group>"; };
+		CF6B879D2E4C73EB00AD0E2B /* BarcodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CF0041CB2E39B15600AD169A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4311FEB394CB62BDA8C4E705 /* Pods_ParkingBarcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E34E8639193F453B9DBE48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AAE1BAF6441ABC012AC1E46 /* Pods_ParkingBarcode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		595763C9418DE49B252FD546 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7C8A7177D85864A0426895C /* Pods-ParkingBarcode.debug.xcconfig */,
+				CC33271E01E1BAA26AEE5762 /* Pods-ParkingBarcode.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF0041C52E39B15600AD169A = {
 			isa = PBXGroup;
 			children = (
 				CF0041D02E39B15600AD169A /* ParkingBarcode */,
 				CF0041CF2E39B15600AD169A /* Products */,
+				595763C9418DE49B252FD546 /* Pods */,
+				39E34E8639193F453B9DBE48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +92,75 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CF0041D02E39B15600AD169A /* ParkingBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B878B2E4C73EB00AD0E2B /* Assets.xcassets */,
+				CF6B878C2E4C73EB00AD0E2B /* Model */,
+				CF6B878D2E4C73EB00AD0E2B /* ParkingBarcodeApp.swift */,
+				CF6B878F2E4C73EB00AD0E2B /* Preview Content */,
+				CF6B87932E4C73EB00AD0E2B /* Utils */,
+				CF6B879C2E4C73EB00AD0E2B /* View */,
+				CF6B879E2E4C73EB00AD0E2B /* ViewModel */,
+			);
+			path = ParkingBarcode;
+			sourceTree = "<group>";
+		};
+		CF6B878C2E4C73EB00AD0E2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6B878F2E4C73EB00AD0E2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B878E2E4C73EB00AD0E2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF6B87922E4C73EB00AD0E2B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B87902E4C73EB00AD0E2B /* ColorExtention.swift */,
+				CF6B87912E4C73EB00AD0E2B /* StringExtention.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CF6B87932E4C73EB00AD0E2B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B87922E4C73EB00AD0E2B /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF6B879C2E4C73EB00AD0E2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B87942E4C73EB00AD0E2B /* BarcodeView.swift */,
+				CF6B87952E4C73EB00AD0E2B /* BtnSelectTime.swift */,
+				CF6B87962E4C73EB00AD0E2B /* ContentView.swift */,
+				CF6B87972E4C73EB00AD0E2B /* HiddenMeasurer.swift */,
+				CF6B87982E4C73EB00AD0E2B /* HomeplusView.swift */,
+				CF6B87992E4C73EB00AD0E2B /* IparkMallView.swift */,
+				CF6B879A2E4C73EB00AD0E2B /* MainView.swift */,
+				CF6B879B2E4C73EB00AD0E2B /* TradersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF6B879E2E4C73EB00AD0E2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B879D2E4C73EB00AD0E2B /* BarcodeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,20 +168,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF0041DC2E39B15700AD169A /* Build configuration list for PBXNativeTarget "ParkingBarcode" */;
 			buildPhases = (
+				08B305B023CA589DB950FFE6 /* [CP] Check Pods Manifest.lock */,
 				CF0041CA2E39B15600AD169A /* Sources */,
 				CF0041CB2E39B15600AD169A /* Frameworks */,
 				CF0041CC2E39B15600AD169A /* Resources */,
+				86709D3D9E64B4BCF5C25DE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				CF0041D02E39B15600AD169A /* ParkingBarcode */,
-			);
 			name = ParkingBarcode;
-			packageProductDependencies = (
-			);
 			productName = ParkingBarcode;
 			productReference = CF0041CE2E39B15600AD169A /* ParkingBarcode.app */;
 			productType = "com.apple.product-type.application";
@@ -86,6 +199,7 @@
 				};
 			};
 			buildConfigurationList = CF0041C92E39B15600AD169A /* Build configuration list for PBXProject "ParkingBarcode" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +207,6 @@
 				Base,
 			);
 			mainGroup = CF0041C52E39B15600AD169A;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = CF0041CF2E39B15600AD169A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,16 +221,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6B879F2E4C73EB00AD0E2B /* Assets.xcassets in Resources */,
+				CF6B87A02E4C73EB00AD0E2B /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08B305B023CA589DB950FFE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkingBarcode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86709D3D9E64B4BCF5C25DE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParkingBarcode/Pods-ParkingBarcode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParkingBarcode/Pods-ParkingBarcode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParkingBarcode/Pods-ParkingBarcode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF0041CA2E39B15600AD169A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6B87A12E4C73EB00AD0E2B /* IparkMallView.swift in Sources */,
+				CF6B87A22E4C73EB00AD0E2B /* ColorExtention.swift in Sources */,
+				CF6B87A32E4C73EB00AD0E2B /* ContentView.swift in Sources */,
+				CF6B87A42E4C73EB00AD0E2B /* StringExtention.swift in Sources */,
+				CF6B87A52E4C73EB00AD0E2B /* ParkingBarcodeApp.swift in Sources */,
+				CF6B87A62E4C73EB00AD0E2B /* BtnSelectTime.swift in Sources */,
+				CF6B87A72E4C73EB00AD0E2B /* BarcodeVM.swift in Sources */,
+				CF6B87A82E4C73EB00AD0E2B /* TradersView.swift in Sources */,
+				CF6B87A92E4C73EB00AD0E2B /* HomeplusView.swift in Sources */,
+				CF6B87AA2E4C73EB00AD0E2B /* MainView.swift in Sources */,
+				CF6B87AB2E4C73EB00AD0E2B /* HiddenMeasurer.swift in Sources */,
+				CF6B87AC2E4C73EB00AD0E2B /* BarcodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +414,7 @@
 		};
 		CF0041DD2E39B15700AD169A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C8A7177D85864A0426895C /* Pods-ParkingBarcode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -257,6 +426,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BUQ8UP3ZV9;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "주차바코드";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,6 +453,7 @@
 		};
 		CF0041DE2E39B15700AD169A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC33271E01E1BAA26AEE5762 /* Pods-ParkingBarcode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +465,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BUQ8UP3ZV9;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "주차바코드";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

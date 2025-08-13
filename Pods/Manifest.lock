@@ -1,0 +1,18 @@
+PODS:
+  - ZXingObjC (3.6.9):
+    - ZXingObjC/All (= 3.6.9)
+  - ZXingObjC/All (3.6.9)
+
+DEPENDENCIES:
+  - ZXingObjC
+
+SPEC REPOS:
+  trunk:
+    - ZXingObjC
+
+SPEC CHECKSUMS:
+  ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
+
+PODFILE CHECKSUM: a0a97809033225dd33d257901235858ca4f8a241
+
+COCOAPODS: 1.15.2

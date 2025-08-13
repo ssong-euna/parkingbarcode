@@ -57,7 +57,3 @@ struct HomeplusView: View {
         .navigationTitle("홈플러스")
     }
 }
-
-#Preview {
-    HomeplusView()
-}

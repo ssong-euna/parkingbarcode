@@ -58,7 +58,3 @@ struct IparkMallView: View {
         .navigationTitle("아이파크몰")
     }
 }
-
-#Preview {
-    IparkMallView()
-}

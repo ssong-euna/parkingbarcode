@@ -12,11 +12,6 @@ struct BarcodeView: View {
     @Binding var str: String
     
     var body: some View {
-        Image(uiImage: image)
-            .interpolation(.none)
-            .resizable()
-            .frame(width: 200, height: 300)
-        
         Spacer()
         
         Text(str)
