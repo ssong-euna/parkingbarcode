@@ -5,7 +5,7 @@
 //  Created by 송은아 on 7/30/25.
 //
 
-import SwiftUICore
+import SwiftUI
 
 struct HiddenMeasurer: View {
     let titles: [String]
