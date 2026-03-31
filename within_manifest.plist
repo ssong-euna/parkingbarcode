@@ -18,13 +18,13 @@
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>com.sea.ParkingBarcode</string>
+        <string>com.sea.within</string>
         <key>bundle-version</key>
         <string>1.0.0</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
-        <string>주차바코드</string>
+        <string>WITHIN</string>
       </dict>
     </dict>
   </array>
